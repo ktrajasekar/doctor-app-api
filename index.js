@@ -1,9 +1,12 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 app.use(express.json());
+const users = require("./data/users.json")
+app.use(cors());
 
-app.get('/login', (req, res) => {
-    res.send('Get All API')
+app.get('/api/login', (req, res) => {
+    res.status(200).json({ users: users });
 });
 
 app.get('/', (req, res) => {
