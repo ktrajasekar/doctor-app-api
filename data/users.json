@@ -1,7 +1,12 @@
 [
   {
     "user": "doctor",
-    "password": "doctor",
+    "password": "password",
     "role": "doctor"
+  },
+  {
+    "user": "patient",
+    "password": "password",
+    "role": "patient"
   }
 ]
